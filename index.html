@@ -20,13 +20,13 @@
                     <p>Welcome to Browserlands! Defeat monsters and use your skills to earn gold and repair the town.</p>
                 </div>
                 <div id="new-game-link">
-                    <p>NEW GAME</p>
+                    <button>NEW GAME</button>
                 </div>
                 <div id="load-game-link">
-                    <p>LOAD GAME</p>
+                    <button>LOAD GAME</button>
                 </div>
                 <div id="settings-link">
-                    <p>SETTINGS</p>
+                    <button data-toggle="modal" data-target="#settingsModal">SETTINGS</button>
                 </div>
             </div>
             <!-- Class Selection-->
@@ -47,11 +47,11 @@
         </div>
     </div>
     <!-- Settings Modal-->
-    <div class="modal" tabindex="-1">
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Settings</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
